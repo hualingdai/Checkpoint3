@@ -7,7 +7,7 @@ WHERE streams< 2000
 ORDER BY streams ASC
 LIMIT 100
 ```
-![Checkpoint3].(checkpoint1.jpg)
+![Checkpoint3](checkpoint1.jpg)
 
 --Which songs have more than 3 million streams?
 ```SELECT trackname,
@@ -18,6 +18,7 @@ WHERE streams>3000000
 ORDER BY streams ASC
 LIMIT 100
 ```
+![Checkpoint3](checkpoint2.jpg)
 
 --Which songs has had the most top 1 position over the years?
 ```SELECT trackname,
@@ -28,6 +29,7 @@ GROUP BY "trackname"
 ORDER BY TIME DESC
 LIMIT 100 
 ```
+![Checkpoint3](checkpoint3.jpg)
 
 --Which artists has been on the spotify the most?
 ```SELECT artist,
@@ -37,6 +39,7 @@ GROUP BY artist
 ORDER BY top_artists DESC
 LIMIT 100 
 ```
+![Checkpoint3](checkpoint4.jpg)
 
 --Which artists has had the most top 10 songs over the years?
 ```SELECT artist,
@@ -47,4 +50,5 @@ GROUP BY "artist"
 ORDER BY TIME DESC
 Limit 100.
 ```
+![Checkpoint3](checkpoint5.jpg)
 
