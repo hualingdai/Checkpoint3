@@ -7,4 +7,4 @@ WHERE streams< 2000
 ORDER BY streams ASC
 LIMIT 100
 ```
-![checkpoint1.jpg]
+![Checkpoint3].(checkpoint1.jpg)
