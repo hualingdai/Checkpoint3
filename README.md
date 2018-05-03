@@ -56,12 +56,12 @@ LIMIT 100
 
 
 --What the average streams in top 100? 
-```SELECT 
+
+     SELECT 
      AVG (streams)
-FROM datasets.spotify_worldwide_daily_song_ranking 
-WHERE position <= 100 
-LIMIT 100
-```
+     FROM datasets.spotify_worldwide_daily_song_ranking 
+     WHERE position <= 100 
+     LIMIT 100
 
 -- What is  the highest streams? 
     
