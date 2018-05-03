@@ -1,13 +1,4 @@
 # Checkpoint3 
---Which songs have less than 2000  streams?
-```SELECT trackname,
-Streams
-FROM datasets.spotify_worldwide_daily_song_ranking
-WHERE streams< 2000
-ORDER BY streams ASC
-LIMIT 100
-```
-![Checkpoint3](checkpoint1.jpg)
 
 --Which songs have more than 3 million streams?
 ```SELECT trackname,
@@ -51,6 +42,17 @@ ORDER BY TIME DESC
 Limit 100.
 ```
 ![Checkpoint3](checkpoint5.jpg)
+
+--Which songs have less than 2000  streams?
+```SELECT trackname,
+Streams
+FROM datasets.spotify_worldwide_daily_song_ranking
+WHERE streams< 2000
+ORDER BY streams ASC
+LIMIT 100
+```
+![Checkpoint3](checkpoint1.jpg)
+
 
 
 --What the average streams in top 100? 
