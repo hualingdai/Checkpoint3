@@ -59,7 +59,7 @@
 ![Checkpoint3](checkpoint1.jpg)
 
 
-Hualing:
+
 --What the average streams in top 100? 
 
      SELECT 
