@@ -74,5 +74,11 @@
     FROM datasets.spotify_worldwide_daily_song_ranking 
     limit 100 
 
+--What is the position from 8-10? (which songs has position from 8-10)
+```SELECT *
+FROM datasets.spotify_worldwide_daily_song_ranking 
+WHERE  position in (8,9,10) 
+limit 100
+
 
 
