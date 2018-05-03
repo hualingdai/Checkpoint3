@@ -59,20 +59,33 @@
 ![Checkpoint3](checkpoint1.jpg)
 
 
+-- What are the top 10 songs listened to?
+```SELECT trackname,
+        	position
+FROM datasets.spotify_worldwide_daily_song_ranking
+WHERE position < 10
+ORDER BY position ASC
+limit 100
 
---What the average streams in top 100? 
+-- What is the average amount of streams?
+```SELECT
+avg(streams)
+FROM datasets.spotify_worldwide_daily_song_ranking limit 100
+ 
 
-     SELECT 
-     AVG (streams)
-     FROM datasets.spotify_worldwide_daily_song_ranking 
-     WHERE position <= 100 
-     LIMIT 100
+-- How many streams in top 100?  
+```SELECT 
+count (*) as streams
+FROM datasets.spotify_worldwide_daily_song_ranking
+where position <= 100
+LIMIT 100 
+
 
 -- What is  the highest streams? 
-    
-    SELECT max(streams) as max_streams
+   ``` SELECT max(streams) as max_streams
     FROM datasets.spotify_worldwide_daily_song_ranking 
     limit 100 
+
 
 --What is the position from 8-10? (which songs has position from 8-10)
 ```SELECT *
