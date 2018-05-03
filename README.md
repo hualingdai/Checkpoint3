@@ -52,3 +52,19 @@ Limit 100.
 ```
 ![Checkpoint3](checkpoint5.jpg)
 
+
+--What the average streams in top 100? 
+```SELECT 
+     AVG (streams)
+FROM datasets.spotify_worldwide_daily_song_ranking 
+WHERE position <= 100 
+LIMIT 100
+```
+
+-- What is  the highest streams? 
+```SELECT max(streams) as max_streams
+FROM datasets.spotify_worldwide_daily_song_ranking 
+limit 100
+```
+
+
